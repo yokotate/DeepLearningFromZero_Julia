@@ -11,7 +11,7 @@ end
 
 # ReLU関数
 function ReLU(x)
-    return maximum(hcat(x,zeros(size(x))),dims=2)
+    return max.(x,0)
 end
 
 # 恒等関数
